@@ -56,7 +56,7 @@
         $('#captcha').sliderCaptcha({
             repeatIcon: 'fa fa-redo',
             setSrc: function () {
-                return 'https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture'
+                return 'https://cdn.jsdelivr.net/gh/weblab/static@master/verification/imgs/' + Math.round(Math.random() * 31) + '.jpg';
             },
             onSuccess: function () {
                 window.location.href = 'https://verification.web-lab.ml';
